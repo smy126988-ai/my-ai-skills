@@ -1,0 +1,40 @@
+{
+  "name": "vibe-brainstorm",
+  "version": "3.0.0",
+  "description": "对话式需求脑暴,帮用户把模糊想法变成清晰需求",
+  "examples": [
+    "/vibe 脑洞大开一下 \"做一个一键切换API的技能\"",
+    "/vibe 需求讨论 \"用户管理系统的功能设计\"",
+    "/vibe 要不我们脑洞大开一下，看看能讨论出一个什么样的好的优惠跟踪",
+    "/vibe 我想聊聊这个想法，帮我理一下需求",
+    "/vibe 看看能讨论出什么方案",
+    "要不我们脑洞大开一下，看看能讨论出什么方案",
+    "我想聊聊这个想法",
+    "帮我理一下需求",
+    "琢磨一下怎么做这个",
+    "继续上次的方案探讨",
+    "帮我生成需求报告",
+    "搜一下相关的行业资料",
+    "清空当前的脑暴状态"
+  ],
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "subcommand": {
+        "type": "string",
+        "description": "子命令:save-requirement/resume/clear/report/search",
+        "enum": ["save-requirement", "resume", "clear", "report", "search"]
+      },
+      "topic": {
+        "type": "string",
+        "description": "需求标题或搜索关键词"
+      },
+      "content": {
+        "type": "string",
+        "description": "需求正文"
+      }
+    },
+    "required": []
+  },
+  "entrypoint": "node scripts/index.js"
+}

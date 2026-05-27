@@ -1,0 +1,27 @@
+{
+  "name": "vibe-task",
+  "version": "1.0.0",
+  "description": "项目级任务记录工具",
+  "examples": [
+    "/vibe 先记一笔 \"修复登录bug\"",
+    "/vibe 记个todo \"优化数据库查询\"",
+    "/vibe 把这个记下来：明天review代码",
+    "/vibe add task \"更新文档\"",
+    "/vibe 别忘了这个，提醒我做测试",
+    "先记一笔，修复登录bug",
+    "记个todo，优化数据库查询",
+    "别忘了这个，提醒我做测试",
+    "记下来：明天review代码"
+  ],
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "topic": {
+        "type": "string",
+        "description": "任务内容"
+      }
+    },
+    "required": ["topic"]
+  },
+  "entrypoint": "node scripts/index.js"
+}

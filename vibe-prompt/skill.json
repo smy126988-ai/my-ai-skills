@@ -1,0 +1,27 @@
+{
+  "name": "vibe-prompt",
+  "version": "1.0.0",
+  "description": "开发 prompt 生成工具",
+  "examples": [
+    "/vibe 整个活吧 \"需求ID: 123\"",
+    "/vibe 生成开发prompt \"用户管理系统\"",
+    "/vibe 开干，把这个需求变成开发指令",
+    "/vibe 安排开发，基于刚才讨论的需求",
+    "/vibe 开始写代码，按刚才的需求做",
+    "整个活吧，把这个需求实现了",
+    "开干，按刚才讨论的做",
+    "开始写代码",
+    "动手做吧"
+  ],
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "topic": {
+        "type": "string",
+        "description": "需求ID或直接描述"
+      }
+    },
+    "required": ["topic"]
+  },
+  "entrypoint": "node scripts/index.js"
+}

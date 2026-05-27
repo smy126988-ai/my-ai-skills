@@ -1,0 +1,22 @@
+{
+  "name": "vibe-check",
+  "version": "1.0.0",
+  "description": "项目文档完整性检查工具",
+  "examples": [
+    "/vibe 看看缺啥",
+    "/vibe 检查一下项目文档",
+    "/vibe 啥情况，文档齐了吗",
+    "/vibe health check",
+    "/vibe 看看还缺什么",
+    "看看缺啥",
+    "检查一下项目文档",
+    "文档齐了吗",
+    "项目状态怎么样"
+  ],
+  "parameters": {
+    "type": "object",
+    "properties": {},
+    "additionalProperties": false
+  },
+  "entrypoint": "node scripts/index.js"
+}
